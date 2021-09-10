@@ -1,4 +1,8 @@
-### Does thing like
+### What
+
+    Excetable shim to replace arguments and such. i.e. an .exe proxy
+
+### How
 
     Reads `<executableName>.shimmy` file when launched and uses as config.
 
@@ -8,7 +12,7 @@
 
     shimmy config files have obvious security implications e.g. if edited maliciously
 
-### usage
+### Usage
 
     Build `cmd/shimmylaunch`
 
@@ -26,11 +30,13 @@
 
 ### TODO
 
+- Impliment proper escaping, so lines can have a combination of escape vales
+
+- Rearrange arguments e.g. support `@ARG` with Sliceable/Index parameter
+
 - Optionally unpack config from envvar e.g. `$SHIMMYPACK=Base85(encoded config file)`.
   Unpacking this variable should remove it from the envars (unless it is subsiquently replaced in the config)
-  To Support chaining... why?
-
-  - If use case includes launched exe calling other shimms. Not hard to impliment, but seems like a nightmare to use.
+  To Support chaining... why? - If use case includes launched exe calling other shimms. Not hard to impliment, but seems like a nightmare to use.
 
 - Fancy Support for `$PATH` ? e.g. replace
 
