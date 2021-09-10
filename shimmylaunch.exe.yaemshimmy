@@ -1,0 +1,6 @@
+D:\SOFT\showenvgui.exe
+Arg1
+@PWD
+/Arg2
+--example
+@ENVHOMEPATH
